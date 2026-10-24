@@ -1,57 +1,76 @@
-<h2>👋 Hey there! I'm Anand</h2>
-
-### 👨🏻‍💻 &nbsp;About Me
-
-🤖 &nbsp;I build software that helps robots figure out where they are and where to go next: state estimation, sensor fusion, and path planning.\
-🎓 &nbsp;I'm studying Electrical Engineering at Purdue University.\
-🛩️ &nbsp;I write guidance, navigation & control (GNC) software for the Purdue Aerial Robotics Team.\
-🏆 &nbsp;I was Head of Programming for Titan Robotics Club (FIRST Robotics), where our autonomous code won the Autonomous and Innovation in Control awards.\
-🌱 &nbsp;I'm going deeper into controls, SLAM, embedded systems, and C++.\
-💼 &nbsp;I'm looking for **Summer 2027 internships** in robotics, autonomy, controls, or embedded software.\
-✉️ &nbsp;You can reach me at anandkrishnan1835@gmail.com, and I'm always happy to talk robots!
-
-### 🔭 &nbsp;What I'm Working On
-
-**🚗 Autonomous Navigation Robot**: A self-driving ground robot on an NVIDIA Jetson Nano that uses LIDAR and wheel encoders. It maps its surroundings with Cartographer SLAM, plans routes with A\*, and follows them with Pure Pursuit, tested over 20 autonomous runs.
-
-**🎯 Swerve-Drive Localization**: Custom swerve kinematics that cut pose error from ~8 ft to under 10 in. A Kalman filter fusing odometry with AprilTag vision brings it down to 0.5–1 in.
-
-**🛩️ Purdue Aerial Robotics GNC**: Autonomy software for a competition drone.
-
-### 🛠 &nbsp;Tech Stack
-
-![C++](https://img.shields.io/badge/-C++-05122A?style=flat&logo=C%2B%2B&logoColor=00599C)&nbsp;
-![Python](https://img.shields.io/badge/-Python-05122A?style=flat&logo=python)&nbsp;
-![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=openjdk&logoColor=FFA518)&nbsp;
-![C](https://img.shields.io/badge/-C-05122A?style=flat&logo=C&logoColor=A8B9CC)&nbsp;
-![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)\
-![NVIDIA Jetson](https://img.shields.io/badge/-NVIDIA%20Jetson-05122A?style=flat&logo=nvidia&logoColor=76B900)&nbsp;
-![Raspberry Pi](https://img.shields.io/badge/-Raspberry%20Pi-05122A?style=flat&logo=raspberrypi&logoColor=A22846)&nbsp;
-![ESP32](https://img.shields.io/badge/-ESP32-05122A?style=flat&logo=espressif&logoColor=E7352C)&nbsp;
-![Linux](https://img.shields.io/badge/-Linux-05122A?style=flat&logo=linux&logoColor=FCC624)\
-![TensorFlow](https://img.shields.io/badge/-TensorFlow-05122A?style=flat&logo=tensorflow&logoColor=FF6F00)&nbsp;
-![scikit-learn](https://img.shields.io/badge/-scikit--learn-05122A?style=flat&logo=scikitlearn&logoColor=F7931E)&nbsp;
-![pandas](https://img.shields.io/badge/-pandas-05122A?style=flat&logo=pandas&logoColor=E70488)\
-![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)&nbsp;
-![Firebase](https://img.shields.io/badge/-Firebase-05122A?style=flat&logo=firebase&logoColor=FFCA28)&nbsp;
-![AWS](https://img.shields.io/badge/-AWS-05122A?style=flat&logo=amazonwebservices&logoColor=FF9900)&nbsp;
-![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)&nbsp;
-![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
-
-**Robotics:** Kalman filtering · Cartographer SLAM · A\* · Pure Pursuit · Swerve kinematics · AprilTags · LIDAR
-
-### ⚙️ &nbsp;GitHub Analytics
-
+<h1 align="center">Hi, I'm Anand 👋</h1>
+<h3 align="center">I build robots that know where they are and decide where to go next.</h3>
+ 
 <p align="center">
-<a href="https://github.com/anand-k185">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=anand-k185&show_icons=true&theme=algolia&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anand-k185&layout=compact&langs_count=8&theme=algolia"/>
-</a>
+<b>Localization · Sensor Fusion · Path Planning · Embedded Autonomy</b><br>
+EE @ Purdue · GNC software @ Purdue Aerial Robotics
 </p>
-
-### 🤝🏻 &nbsp;Connect with Me
-
+---
+ 
+## 🚀 Core Projects
+ 
+### 🚗 Autonomous Mobile Robot
+> **Maps a room on its own and drives itself through it, with no human input.**
+ 
+A ground robot built from scratch on an NVIDIA Jetson Nano. LIDAR and wheel-encoder data feed **Cartographer SLAM** to build a live occupancy map. **A\*** plans the route and **Pure Pursuit** steers the robot along it, closing the loop with the motor controller in real time. **Validated across 20 autonomous runs.**
+ 
+`Jetson Nano` `LIDAR` `Cartographer SLAM` `A*` `Pure Pursuit` `Python` `C++`
+ 
+### 🎯 Swerve-Drive Localization: 8 ft → 0.5 in
+> **Cut a competition robot's position error by more than 99%.**
+ 
+Custom swerve kinematics that model wheel skew and module lag brought pose error from **~8 ft to under 10 in**. A **Kalman filter** fusing odometry with AprilTag vision brought it down to **0.5–1 in**. That accuracy made Pure Pursuit autonomous routines reliable enough to win a **district event** and two awards: **Autonomous** and **Innovation in Control**.
+ 
+`Java` `Kalman Filter` `AprilTags` `Computer Vision` `Pure Pursuit` `Swerve Kinematics`
+ 
+### 🔐 Biometric Facial Recognition
+> **Face-based authentication that can't be fooled by a photo.**
+ 
+A computer-vision identity system that reaches **86% recognition accuracy**. It is hardened against spoofing attacks, where someone holds up a picture of an authorized user.
+ 
+`Python` `Computer Vision` `DeepFace` `Machine Learning`
+ 
+---
+ 
+## 🛠 Tech Stack
+ 
+**Languages**<br>
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+ 
+**Robotics & Autonomy**<br>
+![SLAM](https://img.shields.io/badge/SLAM-Cartographer-1f425f?style=for-the-badge)
+![Kalman](https://img.shields.io/badge/Kalman_Filtering-1f425f?style=for-the-badge)
+![Planning](https://img.shields.io/badge/A*_|_Pure_Pursuit-1f425f?style=for-the-badge)
+![Vision](https://img.shields.io/badge/AprilTags_|_CV-1f425f?style=for-the-badge)
+![GNC](https://img.shields.io/badge/GNC-1f425f?style=for-the-badge)
+ 
+**Hardware & Embedded**<br>
+![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+![LIDAR](https://img.shields.io/badge/LIDAR-333333?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+ 
+**ML & Data**<br>
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+ 
+**Web & Cloud**<br>
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+ 
+---
+ 
+## 📫 Let's Talk Robots
+ 
 <p align="center">
-<a href="https://www.linkedin.com/in/anand-krishnan-508297246"><img src="https://img.shields.io/badge/-Anand%20Krishnan-0077B5?style=flat&logo=Linkedin&logoColor=white"/></a>
-<a href="mailto:anandkrishnan1835@gmail.com"><img src="https://img.shields.io/badge/-anandkrishnan1835@gmail.com-D14836?style=flat&logo=Gmail&logoColor=white"/></a>
+<a href="mailto:anandkrishnan1835@gmail.com"><img src="https://img.shields.io/badge/anandkrishnan1835@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="mailto:krish454@purdue.edu"><img src="https://img.shields.io/badge/krish454@purdue.edu-CEB888?style=for-the-badge&logo=maildotru&logoColor=black"/></a>
+<a href="https://www.linkedin.com/in/anand-krishnan-508297246"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
+<p align="center"><i>Open to Summer 2027 internships in robotics, autonomy, and controls.</i></p>
