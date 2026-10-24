@@ -2,8 +2,7 @@
 <h3 align="center">I build robots that know where they are and decide where to go next.</h3>
  
 <p align="center">
-<b>Localization · Sensor Fusion · Path Planning · Embedded Autonomy</b><br>
-EE @ Purdue · GNC software @ Purdue Aerial Robotics
+<b>Localization · Path Planning · Embedded Software</b><br>
 </p>
 ---
  
