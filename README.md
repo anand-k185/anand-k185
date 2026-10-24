@@ -2,60 +2,34 @@
 <h3 align="center">I build autonomous robots end to end, from the estimation and planning algorithms down to the firmware and wiring that run them.</h3>
  
 <p align="center">
-<b>Controls · Perception · State Estimation · Embedded Firmware · Hardware Integration</b><br>
-EE @ Purdue · GNC @ Purdue Aerial Robotics · Firmware @ Purdue Space Program
+<b>Controls · Perception · Embedded Software · Hardware Integration</b><br>
+EE @ Purdue
 </p>
----
- 
-<table>
-<tr>
-<td width="50%" valign="top">
-### 🧠 Autonomy & Theory
-- Kalman filtering & sensor fusion
-- SLAM & occupancy mapping
-- A\* planning · Pure Pursuit tracking
-- Swerve-drive kinematics
-- Vision-based localization (AprilTags)
-</td>
-<td width="50%" valign="top">
-### ⚙️ Embedded & Hardware
-- C++ firmware on STM32H7 microcontrollers
-- CAN / FDCAN bus drivers & device protocols
-- Real-time closed-loop motor & actuator control
-- Edge compute on NVIDIA Jetson
-- Sensor integration & hand-wired harnesses
-</td>
-</tr>
-</table>
----
+<p align="center"><i>Open to Summer 2027 internships in robotics, and embedded systems.</i></p>
  
 ## 🚀 Core Projects
+
+### 🎯 Swerve-Drive Localization:
+
+Our autonomous routines kept missing because the robot's position estimate drifted by about 8 feet. I modeled the real causes (wheel skew and swerve module lag), which cut the error to under 10 in. Then I fused odometry with AprilTag vision in a Kalman filter and got it to 0.5–1 in.
+
+I wrote the motor drivers and the interfaces to the motors so that they could be used for various subsystems that were being built.
+ 
+`Java` `Kalman Filter` `AprilTags` `Computer Vision` `Pure Pursuit` `Kinematics`
  
 ### 🚗 Autonomous Mobile Robot
-> **Built from bare hardware to full autonomy: it maps a room and drives itself through it.**
  
-**Hardware:** I integrated LIDAR, wheel encoders, and a motor controller on an NVIDIA Jetson Nano, wiring 200+ connections by hand.
-**Autonomy:** **Cartographer SLAM** fuses LIDAR and encoder odometry into a live map. **A\*** plans the route, and **Pure Pursuit** closes the loop with the motors in real time. **Validated across 20 autonomous runs.**
+Drop it in an unfamiliar room and it builds the map and navigates anywhere in it, using LIDAR with Cartographer SLAM, A\* for planning, and Pure Pursuit for tracking. SLAM is only as good as the odometry it's fed, so getting the wiring and motor control solid was half the work.
  
 `Jetson Nano` `LIDAR` `Motor Control` `Cartographer SLAM` `A*` `Pure Pursuit` `Python` `C++`
  
 ### 🚀 TOAD Lander: Thrust Vector Control Firmware
-> **Embedded C++ that steers a rocket engine for Purdue Space Program's vertical-landing vehicle.**
  
 Engine-controller firmware for a custom **STM32H7** board, built with PlatformIO. It commands the pitch and yaw **TVC linear actuators** over an **FDCAN** bus and translates gimbal angles into actuator positions. A startup handshake confirms that every actuator is powered and talking on the bus, so a dead or unplugged actuator is caught before the engine fires.
  
-`C++` `STM32H7` `FDCAN / CAN` `PlatformIO` `Actuator Control` `Gimbal Kinematics`
+`C++` `STM32H7` `CAN` `PlatformIO` `Actuator Control` `Gimbal Kinematics`
  
-### 🎯 Swerve-Drive Localization: 8 ft → 0.5 in
-> **Cut a competition robot's position error by more than 99%.**
- 
-Custom swerve kinematics that model wheel skew and module lag brought pose error from **~8 ft to under 10 in**. A **Kalman filter** fusing odometry with AprilTag vision brought it down to **0.5–1 in**. That accuracy made Pure Pursuit autonomous routines reliable enough to win a **district event** and two awards: **Autonomous** and **Innovation in Control**.
- 
-`Java` `Kalman Filter` `AprilTags` `Computer Vision` `Pure Pursuit` `Swerve Kinematics`
- 
-<sub>Also built: a biometric facial-recognition system with 86% accuracy and anti-spoofing.</sub>
- 
----
+
  
 ## 🛠 Tech Stack
  
@@ -86,13 +60,12 @@ Custom swerve kinematics that model wheel skew and module lag brought pose error
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
  
----
+
  
-## 📫 Let's Talk Robots
+## 📫 Let's Talk
  
 <p align="center">
 <a href="mailto:anandkrishnan1835@gmail.com"><img src="https://img.shields.io/badge/anandkrishnan1835@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="mailto:krish454@purdue.edu"><img src="https://img.shields.io/badge/krish454@purdue.edu-CEB888?style=for-the-badge&logo=maildotru&logoColor=black"/></a>
 <a href="https://www.linkedin.com/in/anand-krishnan-508297246"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 </p>
-<p align="center"><i>Open to Summer 2027 internships in robotics, autonomy, controls, and embedded systems.</i></p>
